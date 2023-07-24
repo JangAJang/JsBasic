@@ -9,7 +9,7 @@ const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
     // resolve("janghee");
     reject(new Error("No Network"));
-  }, 2000);
+  }, 0);
 });
 
 // Consumer는 then, catch, finally로 처리한다.
