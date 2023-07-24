@@ -7,3 +7,15 @@ setTimeout(function () {
   console.log(2);
 }, 0);
 console.log(3);
+
+const printImmidiately = (print) => {
+  print();
+};
+
+printImmidiately(() => console.log("hello"));
+
+const printWithDelay = (print, timeout) => {
+  setTimeout(print, timeout);
+};
+
+printWithDelay(() => console.log("async callback"), 0);
